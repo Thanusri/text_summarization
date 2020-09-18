@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Text Summarization</title>
+  </head>
+  <meta name="viewport" content="width=550; user-scalable=0;" />
+  <h1>Summarize your text</h1>
+    <form action="{{ url_for('textsummarization')}}" method="post">
+        <textarea id="text" name="yourtext" rows="10" cols="50"></textarea>
+      <button type="submit" class="btn btn-primary btn-block btn-large">summarize</button>
+    </form>
+   <br>
+   <br>
+    <br>
+ <strong>{{summary}}</strong>
